@@ -1,0 +1,330 @@
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../css/fonts/OpenSans-Regular.ttf);
+}
+body {
+    font-family: OpenSans;
+    font-size: 13px;
+}
+.w100p {
+    width: 100%;
+}
+.w90p {
+    width: 90%;
+}
+.w85p {
+    width: 85%;
+}
+.w80p {
+    width: 80%;
+}
+.w75p {
+    width: 75%;
+}
+.w70p {
+    width: 70%;
+}
+.w60p {
+    width: 60%;
+}
+.w65p {
+    width: 65%;
+}
+.w50p {
+    width: 50%;
+}
+.w47p {
+    width: 47%;
+}
+.w46p {
+    width: 46%;
+}
+.w45p {
+    width: 45%;
+}
+.w40p {
+    width: 40%;
+}
+.w35p {
+    width: 35%;
+}
+.w33p {
+    width: 33.33%;
+}
+.w30p {
+    width: 30%;
+}
+.w25p {
+    width: 25%;
+}
+.w20p {
+    width: 20%;
+}
+.w15p {
+    width: 15%;
+}
+.w12p {
+    width: 12%;
+}
+.w10p {
+    width: 10%;
+}
+.w5p {
+    width: 5%;
+}
+.no-display {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+
+
+
+
+#content {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.container h1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/*********  ALL LINES   ********/
+
+#page-content {
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: relative;
+}
+.list-label {
+    background-color: #336699;
+}
+.list-label > div {
+    padding: 10px 5px;
+}
+.list-label span {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.icon-plane i {
+    padding:  0 5px;
+}
+.line-view {
+    border-bottom: 1px solid #99ddff;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.line-view:hover {
+    background-color: #0080ff;
+    -webkit-transition: background-color .5s linear;
+    -ms-transition: background-color .5s linear;
+    transition: background-color .5s linear;
+}
+.line-view:hover span,
+.line-view:hover i,
+.icon-plane i,
+.list-label span {
+    color: #ffffff;
+}
+.line-view > div {
+    padding: 0 5px;
+}
+.line-view span {
+    color: #336699;
+    font-size: 1.2em;
+}
+.icon-logo img {
+    width: 60%;
+}
+.icon-direction i {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.9;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+.icon-direction i {
+    color: #336699;
+    font-size: 1.2em;
+}
+.background_img {
+    background-image: url("../img/airport1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    opacity: 0.5;
+}
+
+/******* GEOLOCATION MSG  ***********/
+
+#geolocation {
+    position: fixed;
+    left: 50%;
+    top:30%;
+    transform: translate(-50%,0);
+    min-width: 300px;
+    z-index: 5;
+    -webkit-transition:1.4s linear;
+    -ms-transition:1.4s linear;
+    transition: 1.4s linear;
+}
+.geo-header {
+    background-color: #336699;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+.geo-content {
+    background-color: #ffffff;
+    padding: 20px 10px;
+}
+.geo-content p {
+    font-size: 1.2em;
+}
+.geo-content button {
+    margin-right: 10px;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    border: 1px solid #336699;
+    background-color: #bfdfff;
+}
+.geo-content button:hover {
+    background-color: #336699;
+    color: #ffffff;
+}
+.geo-btn {
+    margin-top: 30px;
+}
+#loading-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 6;
+    -webkit-transition:1s linear;
+    -ms-transition:1s linear;
+    transition: 1s linear;
+}
+.loading-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.line-view-btn {
+    margin-top: 50px;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    border: 1px solid #336699;
+    color: #ffffff;
+    background-color: #336699;
+    position: absolute;
+    top: 100%;
+}
+.line-view-btn:hover {
+    background-color: #bfdfff;
+    color: #000000;
+}
+
+/************* RESPONSIVE DESIGN  ********/
+
+
+@media (max-width: 700px) {
+    #page-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 460px) {
+    .id-label,
+    .altitude-label,
+    .id-aircraft,
+    .altitude {
+        width: 35%;
+    }
+    .model-label,
+    .model {
+        display: none;
+    }
+    .line-view > div {
+        padding: 0 10px;
+    }
+    .icon-logo,
+    .icon-plane {
+        width: 20%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    #geolocation {
+        min-width: 250px;
+    }
+    .geo-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    #geo-msg {
+        text-align: center;
+    }
+    .to,
+    .to-label{
+        margin-left: 10px;
+    }
+    .from,
+    .from-label{
+        margin: 0 5px;
+    }
+}
